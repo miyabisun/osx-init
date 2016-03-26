@@ -1,0 +1,11 @@
+tap 'homebrew/bundle'
+brew 'fish'
+brew 'git'
+brew 'go'
+brew 'fzf'
+brew 'httpie', args: ['HEAD']
+brew 'macvim', args: ['with-override-system-vim']
+brew 'mycli'
+brew 'mysql'
+brew 'tig'
+brew 'tmux'
