@@ -1,0 +1,18 @@
+#!/bin/bash
+# URL:
+#   - http://brew.sh/index_ja.html
+#   - https://github.com/Homebrew/homebrew-bundle
+
+# install homebrew (use xcode)
+if hash brew; then
+  echo "installed homebrew."
+else
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+if hash brew; then
+  brew tap Homebrew/bundle
+else
+  echo "homebrew installation is faild..."
+fi
+

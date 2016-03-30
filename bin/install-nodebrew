@@ -1,0 +1,15 @@
+#!/bin/bash
+# URL:
+#   - http://qiita.com/khrtz/items/fced755bac9d158f0421
+
+# install nodebrew
+if hash nodebrew; then
+  curl -L git.io/nodebrew | perl - setup
+else
+  echo "installed nodebrew."
+fi
+
+# install node binary
+nodebrew install-binary latest
+nodebrew use latest
+
